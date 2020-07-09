@@ -1,3 +1,4 @@
+import os
 import time
 from typing import Dict
 
@@ -8,7 +9,7 @@ from pytube.cli import on_progress
 class Downloader:
     def __init__(
         self,
-        save_path: str = "/home/jgutierrez/Desktop/youtube_downloader/downloads_test",
+        save_path: str = os.environ.get("DOWNLOAD_PATH"),
         link: str = None,
         video_name: str = None,
     ) -> None:
