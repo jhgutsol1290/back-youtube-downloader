@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pre-commit = "*"
+pylint = "*"
+autopep8 = "*"
+black = "==19.10b0"
+
+[packages]
+pytube3 = "*"
+djangorestframework = "*"
+django = "*"
+psycopg2 = "*"
+django-cors-headers = "*"
+
+[requires]
+python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
